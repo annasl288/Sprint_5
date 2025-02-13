@@ -7,3 +7,4 @@
   - tests/test_registration.py - тесты регистрации
 - conftest.py - фикстуры
 - locators.py - локаторы элементов
+- urls.py - URL основных страниц сервиса
