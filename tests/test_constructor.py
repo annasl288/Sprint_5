@@ -14,7 +14,7 @@ class TestConstructor:
 
         driver.find_element(*MainPage.BUNS_BUTTON).click()
 
-        assert driver.find_element(*MainPage.BUNS_HEADER).is_displayed()
+        assert driver.find_element(*MainPage.BUNS_TAB_ACTIVE)
 
 
     def test_jump_to_sauces_success(self, driver):
@@ -24,7 +24,7 @@ class TestConstructor:
 
         driver.find_element(*MainPage.SAUCES_BUTTON).click()
 
-        assert driver.find_element(*MainPage.SAUCES_HEADER).is_displayed()
+        assert driver.find_element(*MainPage.SAUCES_TAB_ACTIVE)
 
 
     def test_jump_to_fillings_success(self, driver):
@@ -34,4 +34,4 @@ class TestConstructor:
 
         driver.find_element(*MainPage.FILLINGS_BUTTON).click()
 
-        assert driver.find_element(*MainPage.FILLINGS_HEADER).is_displayed()
+        assert driver.find_element(*MainPage.FILLINGS_TAB_ACTIVE)

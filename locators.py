@@ -5,11 +5,11 @@ class MainPage:
     LOGIN_BUTTON = (By.XPATH, ".//button[text() = 'Войти в аккаунт']") # Кнопка "Войти в аккаунт"
     ACCOUNT_BUTTON = (By.XPATH, ".//p[text() = 'Личный Кабинет']") # Кнопка "Личный кабинет"
     BUNS_BUTTON = (By.XPATH, ".//span[text() = 'Булки']") # Кнопка "Булки"
-    BUNS_HEADER = (By.XPATH, ".//h2[text() = 'Булки']") # Заголовок раздела "Булки"
+    BUNS_TAB_ACTIVE = (By.XPATH, ".//span[text() = 'Булки']/parent::div[contains(@class, 'tab_tab_type_current')]") # Активный раздел "Булки"
     SAUCES_BUTTON = (By.XPATH, ".//span[text() = 'Соусы']") # Кнопка "Соусы"
-    SAUCES_HEADER = (By.XPATH, ".//h2[text() = 'Соусы']")  # Заголовок раздела "Соусы"
+    SAUCES_TAB_ACTIVE = (By.XPATH, ".//span[text() = 'Соусы']/parent::div[contains(@class, 'tab_tab_type_current')]")  # Активный раздел "Соусы"
     FILLINGS_BUTTON = (By.XPATH, ".//span[text() = 'Начинки']") # Кнопка "Начинки"
-    FILLINGS_HEADER = (By.XPATH, ".//h2[text() = 'Начинки']")  # Заголовок раздела "Начинки"
+    FILLINGS_TAB_ACTIVE = (By.XPATH, ".//span[text() = 'Начинки']/parent::div[contains(@class, 'tab_tab_type_current')]")  # Активный раздел "Начинки"
 
 class AccountPage:
     ACCOUNT_BUTTON = (By.XPATH, ".//a[text() = 'Профиль']") # Кнопка "Профиль"
