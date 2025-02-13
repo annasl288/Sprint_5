@@ -6,7 +6,8 @@ from locators import MainPage, AuthorizationPage
 @pytest.fixture
 def driver():
     driver = webdriver.Chrome()
-    return driver
+    yield driver
+    driver.quit()
 
 @pytest.fixture
 def login(driver):

@@ -13,7 +13,6 @@ class TestAccountPage:
 
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/account/profile'
 
-        driver.quit()
 
     def test_jump_to_constructor_by_constructor_button_click_success(self, driver, login):
 
@@ -25,6 +24,7 @@ class TestAccountPage:
 
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
 
+
     def test_jump_to_constructor_by_logo_button_click_success(self, driver, login):
 
         driver.find_element(*MainPage.ACCOUNT_BUTTON).click()
@@ -35,7 +35,6 @@ class TestAccountPage:
 
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
 
-        driver.quit()
 
     def test_sign_out_success(self, driver, login):
 
@@ -46,5 +45,3 @@ class TestAccountPage:
         WebDriverWait(driver, 3).until(expected_conditions.presence_of_element_located(AuthorizationPage.HEADER))
 
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/login'
-
-        driver.quit()

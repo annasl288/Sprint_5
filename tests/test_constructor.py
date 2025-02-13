@@ -16,7 +16,6 @@ class TestConstructor:
 
         assert driver.find_element(*MainPage.BUNS_HEADER).is_displayed()
 
-        driver.quit()
 
     def test_jump_to_sauces_success(self, driver):
 
@@ -27,7 +26,6 @@ class TestConstructor:
 
         assert driver.find_element(*MainPage.SAUCES_HEADER).is_displayed()
 
-        driver.quit()
 
     def test_jump_to_fillings_success(self, driver):
 
@@ -37,5 +35,3 @@ class TestConstructor:
         driver.find_element(*MainPage.FILLINGS_BUTTON).click()
 
         assert driver.find_element(*MainPage.FILLINGS_HEADER).is_displayed()
-
-        driver.quit()

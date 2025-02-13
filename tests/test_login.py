@@ -18,7 +18,6 @@ class TestLogin:
 
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
 
-        driver.quit()
 
     def test_login_from_main_page_by_account_button_click_success(self, driver):
 
@@ -32,7 +31,6 @@ class TestLogin:
 
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
 
-        driver.quit()
 
     def test_login_from_registration_page_success(self, driver):
 
@@ -46,7 +44,6 @@ class TestLogin:
 
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
 
-        driver.quit()
 
     def test_login_from_recover_page_success(self, driver):
 
@@ -59,5 +56,3 @@ class TestLogin:
         WebDriverWait(driver, 3).until(expected_conditions.presence_of_element_located(MainPage.HEADER))
 
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/'
-
-        driver.quit()

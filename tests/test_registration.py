@@ -20,7 +20,6 @@ class TestRegistration:
 
         assert driver.current_url == 'https://stellarburgers.nomoreparties.site/login'
 
-        driver.quit()
 
     def test_registration_incorrect_password_message(self, driver):
 
@@ -34,5 +33,3 @@ class TestRegistration:
         driver.find_element(*RegistrationPage.REGISTRATION_BUTTON).click()
 
         assert driver.find_element(*RegistrationPage.ERROR_MESSAGE_INCORRECT_PASSWORD).text == 'Некорректный пароль'
-
-        driver.quit()
